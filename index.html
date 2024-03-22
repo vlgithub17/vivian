@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="favicon.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+  <title>Trying New Things</title>
+</head>
+<body style="text-align: center;">
+  
+  <form action="/favorite-color" method="post">
+    <input type="text" placeholder="Name" name="first" required>
+    <div>
+      Favorite Color:
+      <input name="color" type="radio"  value="red"> Red
+      <input name="color" type="radio"  value="blue"> Blue
+      <input name="color" type="radio"  value="green"> Green
+    </div>
+    <input type="submit">
+  </form>
+  
+  <form action="/favorite-animal" method="post">
+    <input type="text" placeholder="Name" name="name" required>
+    <div>
+      Favorite Animal:
+      <input name="animal" type="radio"  value="Cat" > Cat
+      <input name="animal" type="radio"  value="Dog"> Dog
+      <input name="animal" type="radio"  value="Frog"> Frog
+    </div>
+    <input type="submit">
+  </form>
+
+  <form onsubmit="myage(event)">
+    <input id="ageName" type="text" placeholder="Name" name="name" required>
+    <input type="submit">
+  </form>
+
+  <script>
+    function myage(e) {
+      e.preventDefault()
+      fetch('https://vivian-lima.com/age', {
+        method: "POST",
+        body: JSON.stringify({
+          name: ageName.value
+        })
+      }).then(r=>r.text()).then(r=>alert(r))
+    }
+  </script>
+  <h1><strong><i>New Playground</i></strong></h1>
+  <p>Learning from <a href="https://skapi.com">SKAPI</a></p>
+  <h2>List <strong>bullet points</strong></h2>
+  <ul>
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+  </ul>
+  <h2>List with <strong>number points</strong></h2>
+  <ol>
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+  </ol>
+  <h2>Just an image</h2>
+  <img src="test.jpeg" alt="Just an image">
+  <!-- Here, we use a br tag to add white space to the page. -->
+  <br/><br/>
+  <table>
+    <thead>
+      <tr>
+        <th>Python</th>
+        <th>C++</th>
+        <th>Java</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Something</td>
+        <td>Something</td>
+        <td>Something</td>
+      </tr>
+      <tr>
+        <td>Something</td>
+        <td>Something</td>
+        <td>Something</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

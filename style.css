@@ -1,0 +1,68 @@
+/* Resetting default margin and padding */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for the body */
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 20px;
+}
+
+/* Styles for input elements */
+input[type="text"] {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Styles for radio buttons */
+input[type="radio"] {
+  margin-left: 5px;
+}
+
+/* Styles for headings */
+h1, h2, h3 {
+  color: #333; /* Dark gray color */
+}
+
+/* Styles for links */
+a {
+  color: #007bff; /* Blue color */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Styles for images */
+img {
+  max-width: 100%; /* Make sure the image doesn't exceed its container */
+  height: auto; /* Maintain aspect ratio */
+  margin: 20px 0; /* Add margin above and below the image */
+}
+
+/* Styles for lists */
+ul, ol {
+  text-align: left; /* Align list items to the left */
+}
+
+/* Styles for table */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Collapse border spacing */
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ccc; /* Gray border */
+  padding: 8px;
+}
+
+table th {
+  background-color: #f2f2f2; /* Light gray background for header */
+}
