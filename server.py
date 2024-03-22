@@ -192,7 +192,7 @@ class MyServer(BaseHTTPRequestHandler):
                 to_insert_list = ''
                 
                 for file in last_10_files:
-                    print(os.path.join(directory, file))
+                    
                     with open(os.path.join(directory, file), "r") as f:
                         print('DATAAAAA')
                         print(f)
