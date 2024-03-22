@@ -151,7 +151,7 @@ class MyServer(BaseHTTPRequestHandler):
                         
                     # Write the updated data back to the file
                     with open(new_filename, "w") as f:
-                        json.dump(data, f, indent=4)
+                        json.dum p(data, f, indent=4)
 
                 # Write a new file
                 else:
