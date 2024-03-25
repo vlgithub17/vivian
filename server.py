@@ -73,6 +73,7 @@ class MyServer(BaseHTTPRequestHandler):
               with open(path, "rb") as data:      
                   self.send_response(200)
                   self.send_header('Cache-Control', 'max-age=600')
+                  #   self.send_header('Content-Type', 'application/octet-stream')
                   self.end_headers()
                   self.wfile.write(data.read())
             else:
